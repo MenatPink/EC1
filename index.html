@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EC1</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="src/CSS/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+  </head>
+  <body ng-app="EC1">
+    <section class = "titleSection">
+      <header>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </header>
+      <div class="titleWrapper">
+        <h1>EC1 GALLERY</h1>
+      </div>
+      <div class="mainImage">
+        <div class="Info">
+          <h3>Anselm Kiefer: Walhalla</h3>
+          <p>Until 12th February 2017, Bermondsey</p>
+        </div>
+        <div class="carouselbuttons">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+</section>
+<section ng-controller="Ctrl" class="newsEventsSection">
+  <h2>News &amp; Events</h2>
+  <p>View all</p>
+  <div class="newsWrapper">
+    <div ng-repeat="news in newsArray" class="news">
+      <div class="newsImage">
+        <img src="{{ news.img }}" alt="Event 1">
+      </div>
+      <h3>{{ news.strapline }}</h3>
+      <p>{{ news.date }}</p>
+      <p>{{ news.text }}</p>
+    </div>
+  </div>
+</section>
+<section class="channel">
+  <h2>Channel</h2>
+  <p>View all</p>
+  <div class="videoWrapper">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FshvS5lwe4A" frameborder="0" allowfullscreen></iframe>
+    <div>
+      <h3>Anselm Kiefer</h3>
+      <p>In conversation with Tim Marlow In the auditoriom</p>
+    </div>
+    <p>In this film Anselm Kiefer discusses his work and his exhibition 'Walhalla' at White Cube Bermondsey with Tim Marlow</p>
+  </div>
+</section>
+<section class="artists">
+  <h2>Artists</h2>
+  <p>View all</p>
+  <div class="artistContent">
+      <div class="artistColumn">
+          <ul>
+            <li>Franz</li>
+            <li>Etel Adnan</li>
+            <li>Darren Almond</li>
+            <li>Ellen Altfest</li>
+            <li>Michael Armitage</li>
+            <li>Miroslaw Balka</li>
+            <li>Georg Baselitz</li>
+            <li>Larry Bell</li>
+            <li>Jake &amp; Dinos Chapman</li>
+            <li>Chuck Close</li>
+            <li>Grogory Crewdson</li>
+            <li>Tracey Emin</li>
+            <li>Katharina Fritsch</li>
+            <li>Theaster Gates</li>
+            <li>Gilbert &amp; George</li>
+            <li>Antony Gormley</li>
+            <li>Andreas Gursky</li>
+        </ul>
+        <ul>
+          <li>David Hammons</li>
+          <li>Mona Hatoum</li>
+          <li>He Xiangyu</li>
+          <li>Damien Hirst</li>
+          <li>Robert Irwin</li>
+          <li>Runa Islam</li>
+          <li>Sergej Jensen</li>
+          <li>Anselm Kiefer</li>
+          <li>Rachel Kneebone</li>
+          <li>Imi Knoebel</li>
+          <li>Elad Lassry</li>
+          <li>Liza Lou</li>
+          <li>Jac Leirner</li>
+          <li>Liu Wei</li>
+          <li>Christian Marclay</li>
+          <li>Josiah McElheny</li>
+          <li>Julie Mehretu</li>
+      </ul>
+        <ul>
+          <li>Beatriz Milhazes</li>
+          <li>Harland Miller</li>
+          <li>Sarah Morris</li>
+          <li>Gabriel Orozco</li>
+          <li>Damian Ortega</li>
+          <li>Virginia Overton</li>
+          <li>Eddie Peake</li>
+          <li>Magnus Plessen</li>
+          <li>Jessican Rankin</li>
+          <li>Christian Rosa</li>
+          <li>Doris Salcedo</li>
+          <li>Raqib Shaw</li>
+          <li>Haim Steinbach</li>
+          <li>Sam Taylor-Johnson</li>
+          <li>Fred Tomaselli</li>
+          <li>Jeff Wall</li>
+          <li>Cerith Wyn Evans</li>
+      </ul>
+    </div>
+    <img src="Assets/Painting.png" alt="painting">
+</div>
+</section>
+<section class="footer">
+  <div class="additionalInfo">
+  <h2>Newsletter</h2>
+  <h2>Contact</h2>
+  <h2>Press rooms</h2>
+  </div>
+  <div class="socialIcons">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </div>
+  <div class="address">
+      <p>EC1 GALLERY</p>
+      <p>344 Clerkenwell Road</p>
+      <p>London</p>
+      <p>EC1 5RS</p>
+      <p>Tel +44 (0) 207 123 4567</p>
+</div>
+  <div class="adminBar">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 EC1 GALLERY</p>
+    <div class="adminButtons">
+      <p>Privacy notice</p>
+      <p>Terms of sale</p>
+      <p>Cookie policy</p>
+    </div>
+  </div>
+</section>
+<div class="scrollTop">
+  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="src/JS/controller.js"></script>
+    <script src="JS/index.min.js"></script>
+  </body>
+</html>
